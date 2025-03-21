@@ -4,6 +4,8 @@ require('dotenv').config();
 const tasks = require('./Routes/TaskRouter');
 const db = require('./Database/db');
 const bodyParser = require('body-parser');
+const cors = require('cors');
+app.use(cors());
 db();
 
 
